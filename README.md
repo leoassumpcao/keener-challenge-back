@@ -10,11 +10,12 @@ JavaScript), sendo que o app deve consumir a api. Sua API deve conter:
 * Usuários (listagem, adição, edição e remoção)
 
 ## Sobre:
-A API foi desenvolvida em C# com ASP.NET Core 6.0 junto com o Entity Framework (EF) como ORM, além do Swagger para a documentação da API que pode ser gerada dinamicamente. Um exemplo desta documentação está salva no repositório (swagger.json). Você pode utilizar o editor online para ler o arquivo de documentação: https://editor.swagger.io/. 
-Utilize alguns pacotes populares como:
+A API foi desenvolvida em C# com ASP.NET Core 6.0 junto com o Entity Framework Core (EF Core) como ORM, além do Swagger para a documentação da API que pode ser gerada dinamicamente. Um exemplo desta documentação está salva no repositório (swagger.json). Você pode utilizar o editor online para ler o arquivo de documentação: https://editor.swagger.io/. 
+
+Para desenvolver essa API, utilizei alguns pacotes populares como:
 * FluentValidation para validação dos dados dos requests;
-* JwtBearer (Microsoft.AspNetCore.Authentication.JwtBearer): habilita o suporte para autenticação baseada em portador Json Web Token (JWT);
-* ASP.NET Identity para gerenciar os usuários e roles, além da autenticação através de usuários através de e-mail e senha.
+* JwtBearer (Microsoft.AspNetCore.Authentication.JwtBearer) que habilita o suporte para autenticação baseada em portador Json Web Token (JWT);
+* ASP.NET Identity para gerenciar os usuários e roles, além da autenticação dos usuários por e-mail e senha.
 * AutoMapper para mapear e converter entidades para DTOs.
 
 ## Configuração:
@@ -25,8 +26,8 @@ O preenchimento de tabelas com dados iniciais ("Seed Data") com dois roles, um u
 * Administrator
 
 ### Usuário padrão:
-E-mail de acesso: adm@test.dev
-Senha: $ABC12345wasd$
+* E-mail de acesso: adm@test.dev
+* Senha: $ABC12345wasd$
 
 ## Como utilizar
 
